@@ -1,0 +1,62 @@
+/home/pi/throttler
+Parent server started on port : 9092
+Clients connected: 1
+Child server started
+Clients connected: 2
+Child server started
+Request Type:GET
+URL Requested:/test.txt
+1724
+resource sh /home/pi/throttler/script.sh 1724
+Input : {"pid" : "1724","cpu" : "", "memory" : ""}
+Config : {"pid" : "1724","cpu" : "1", "memory" : "1"}
+empty String
+Output:{"pid" : "1724","cpu" : "", "memory" : "", "state" : "Running"}
+Clients connected: 3
+Child server started
+Request Type:GET
+URL Requested:/test.txt
+1724
+resource sh /home/pi/throttler/script.sh 1724
+Input : {"pid" : "1724","cpu" : "", "memory" : ""}
+Config : {"pid" : "1724","cpu" : "1", "memory" : "1"}
+empty String
+Output:{"pid" : "1724","cpu" : "", "memory" : "", "state" : "Running"}
+Clients connected: 4Exception in thread "Thread-2" 
+Child server started
+Clients connected: 5
+Child server started
+java.lang.NullPointerException
+	at throttleResources.HttpWebServer$ChildServerConcurrent.run(HttpWebServer.java:70)
+Request Type:GET
+URL Requested:/test.txt
+1724
+resource sh /home/pi/throttler/script.sh 1724
+Input : {"pid" : "1724","cpu" : "", "memory" : ""}
+Config : {"pid" : "1724","cpu" : "1", "memory" : "1"}
+empty String
+Output:{"pid" : "1724","cpu" : "", "memory" : "", "state" : "Running"}
+Exception in thread "Thread-4" Clients connected: 6
+java.lang.NullPointerException
+Child server started
+	at throttleResources.HttpWebServer$ChildServerConcurrent.run(HttpWebServer.java:70)
+Clients connected: 7
+Child server started
+Request Type:GET
+URL Requested:/
+1724
+resource sh /home/pi/throttler/script.sh 1724
+Input : {"pid" : "1724","cpu" : "", "memory" : ""}
+Config : {"pid" : "1724","cpu" : "1", "memory" : "1"}
+empty String
+Output:{"pid" : "1724","cpu" : "", "memory" : "", "state" : "Running"}
+Clients connected: 8
+Child server started
+Request Type:GET
+URL Requested:/
+1724
+resource sh /home/pi/throttler/script.sh 1724
+Input : {"pid" : "1724","cpu" : "", "memory" : ""}
+Config : {"pid" : "1724","cpu" : "1", "memory" : "1"}
+empty String
+Output:{"pid" : "1724","cpu" : "", "memory" : "", "state" : "Running"}
